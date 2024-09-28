@@ -1,0 +1,110 @@
+accesscontrol
+adbyby-plus
+arpbind
+autoreboot
+ddns
+filetransfer
+firewall
+flowoffload
+mtwifi
+nlbwmon
+ramfree
+ssr-plus，Shadowsocks v2ray plugin，Trojan，Redsocks2，ShadowsocksR Server
+unblockmusic，unblockmusic golang version
+upnp
+vlmcsd
+wol
+zerotier
+
+
+保姆级openwrt组mesh教程(低成本)
+https://www.bilibili.com/read/cv22327230/
+具有设置说明
+
+从2019年9月开始, wpad-openssl 或者 wpad-wolfssl 可以 进行 802.11s 加密.
+wpad-basic-wolfssl 仅支持 802.11r 和 802.11w。
+wpad-mesh-openssl 和 wpad-mesh-wolfssl 仅支持 802.11r/w and 802.11s。
+wpad-openssl 和 wpad-wolfssl 是 wpad的完整版 提供支持 802.11k/v/r/w and 802.11s。
+wpad 的 完整版 意味着没有进行任何修剪以减小其大小。
+
+
+
+
+
+在线编译推荐：https://supes.top
+添加如下定制包，以及删除wpad-basic-wolfssl(-包名=去除对应软件包)
+luci-app-easymesh wpad -wpad-basic-wolfssl
+
+easymesh 的视频：
+https://www.bilibili.com/video/BV1Jv411A7qX/
+自动组网
+
+802.11k/v的介绍视频：
+https://www.bilibili.com/video/BV1Jv411A7qX/
+移动域、
+
+
+
+
+-----------
+在线编译：https://openwrt.ai/?target=ramips%2Fmt7621&id=phicomm_k2p#downloads1
+
+
+
+
+本地编译介绍视频：
+https://sspai.com/post/61463
+
+
+5.配置编译文件
+make menuconfig
+
+Target System 选择 MediaTek Ralink MIPS
+Subtarget 选择 MT7621 based boards
+Target Profile 选择 Phicomm K2P
+
+
+修改 zzz-default-settings 文件，在 exit 0 这一行上方添加自定义配置。具体操作如下：
+
+$ vim ./package/lean/default-settings/files/zzz-default-settings    # 打开要编辑的文件
+
+uci set network.lan.ipaddr='192.168.1.254'   # 默认 IP 地址
+uci set network.lan.proto='static'   # 静态 IP
+uci set network.lan.type='bridge'   # 接口类型：桥接
+uci set network.lan.ifname='eth0'   # 网络端口：默认 eth0，第一个接口
+uci set network.lan.netmask='255.255.255.0' # 子网掩码
+uci set network.lan.gateway='192.168.1.1'   # 默认网关地址（主路由 IP）
+uci set network.lan.dns='192.168.1.1'  # 默认上游 DNS 地址
+uci commit network
+
+
+
+https://github.com/coolsnowwolf/lede?tab=readme-ov-file
+GitHub页面
+
+
+下载适用于您设备的 OpenWrt 固件
+https://firmware-selector.openwrt.org/?version=23.05.2&target=ramips%2Fmt7621&id=phicomm_k2p
+请求构建K2p的固件
+
+-----------
+https://939.me/2050.html
+Openwrt在线构建使用指南
+
+
+
+https://post.smzdm.com/p/ar07p90z/
+利用老路由器WDR6500刷OpenWrt零成本开启802.11r 快速漫游或者802.11s mesh无线组网
+
+
+------------
+breed进入方法：
+拔掉路由器电源断电，按住 reset 按钮不放，插上电源，紫色灯快闪几下后放开 reset 按钮，直接访问192.168.1.1就能进入 breed 的控制台。
+
+
+
+
+https://www.cnblogs.com/gnz48/p/17007914.html
+OpenWrt固件_官方下载_官方自己编译定制软件包
+
+

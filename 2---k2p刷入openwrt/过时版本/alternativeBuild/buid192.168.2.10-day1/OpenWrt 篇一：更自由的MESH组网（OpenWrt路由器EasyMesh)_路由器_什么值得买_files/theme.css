@@ -1,0 +1,160 @@
+html {
+  --color-333: #333;
+  --color-666: #666;
+  --color-999: #999;
+  --color-ccc: #ccc;
+  --color-eee-35: #eee;
+  --color-f5f5f5: #f5f5f5;
+  --color-fff-12: #fff;
+  --color-e62828: #e62828;
+  --color-ff761a-ffa31f: #ff761a;
+  --color-ffad44-ffcb44: #ffad44;
+  --color-42e2a5-89eabf: #42e2a5;
+  --color-4bb8ff-85ccff: #4bb8ff;
+  --color-5b6fff-7c99ff: #5b6fff;
+  --color-5e32ff-8375ff: #5e32ff;
+  --color-ffedeb-4b2929: #ffedeb;
+  --color-ffeadd-4d3b21: #ffeadd;
+  --color-fff0dd-4d4328: #fff0dd;
+  --color-dcf9ee-364940: #dcf9ee;
+  --color-def2ff-35434d: #def2ff;
+  --color-e1e4ff-33394d: #e1e4ff;
+  --color-e1d9ff-35324d: #e1d9ff;
+}
+html[data-theme-color="dark"] {
+  --color-333: #e0e0e0;
+  --color-666: #a0a0a0;
+  --color-999: #6c6c6c;
+  --color-ccc: #666;
+  --color-eee-35: #353535;
+  --color-fff-12: #121212;
+  --color-e62828: #f04848;
+  --color-ff761a-ffa31f: #ffa31f;
+  --color-ffad44-ffcb44: #ffcb44;
+  --color-42e2a5-89eabf: #89eabf;
+  --color-4bb8ff-85ccff: #85ccff;
+  --color-5b6fff-7c99ff: #7c99ff;
+  --color-5e32ff-8375ff: #8375ff;
+  --color-ffedeb-4b2929: #4b2929;
+  --color-ffeadd-4d3b21: #4d3b21;
+  --color-fff0dd-4d4328: #4d4328;
+  --color-dcf9ee-364940: #364940;
+  --color-def2ff-35434d: #35434d;
+  --color-e1e4ff-33394d: #33394d;
+  --color-e1d9ff-35324d: #35324d;
+}
+
+[data-forecolor="#333333"] {
+  color: var(--color-333);
+}
+[data-forecolor="#666666"] {
+  color: var(--color-666);
+}
+[data-forecolor="#999999"] {
+  color: var(--color-999);
+}
+[data-forecolor="#cccccc"] {
+  color: var(--color-ccc);
+}
+[data-forecolor="#eeeeee"] {
+  color: var(--color-eee-35);
+}
+[data-forecolor="#f5f5f5"] {
+  color: var(--color-f5f5f5);
+}
+[data-forecolor="#ffffff"] {
+  color: var(--color-fff-12);
+}
+[data-forecolor="#e62828"] {
+  color: var(--color-e62828);
+}
+[data-forecolor="#ff761a"] {
+  color: var(--color-ff761a-ffa31f);
+}
+[data-forecolor="#ffad44"] {
+  color: var(--color-ffad44-ffcb44);
+}
+[data-forecolor="#42e2a5"] {
+  color: var(--color-42e2a5-89eabf);
+}
+[data-forecolor="#4bb8ff"] {
+  color: var(--color-4bb8ff-85ccff);
+}
+[data-forecolor="#5b6fff"] {
+  color: var(--color-5b6fff-7c99ff);
+}
+[data-forecolor="#5e32ff"] {
+  color: var(--color-5e32ff-8375ff);
+}
+
+[data-backcolor="#333333"] {
+  background-color: var(--color-333);
+}
+[data-backcolor="#666666"] {
+  background-color: var(--color-666);
+}
+[data-backcolor="#999999"] {
+  background-color:   var(--color-999);
+}
+[data-backcolor="#cccccc"] {
+  background-color: var(--color-ccc);
+}
+[data-backcolor="#eeeeee"] {
+  background-color: var(--color-eee-35);
+}
+[data-backcolor="#f5f5f5"] {
+  background-color: var(--color-f5f5f5);
+}
+[data-backcolor="#ffffff"] {
+  background-color: var(--color-fff-12);
+}
+[data-backcolor="#ffedeb"] {
+  background-color: var(--color-ffedeb-4b2929);
+}
+[data-backcolor="#ffeadd"] {
+  background-color: var(--color-ffeadd-4d3b21);
+}
+[data-backcolor="#fff0dd"] {
+  background-color: var(--color-fff0dd-4d4328);
+}
+[data-backcolor="#dcf9ee"] {
+  background-color: var(--color-dcf9ee-364940);
+}
+[data-backcolor="#def2ff"] {
+  background-color: var(--color-def2ff-35434d);
+}
+[data-backcolor="#e1e4ff"] {
+  background-color: var(--color-e1e4ff-33394d);
+}
+[data-backcolor="#e1d9ff"] {
+  background-color: var(--color-e1d9ff-35324d);
+}
+[data-backcolor="#e62828"] {
+  background-color: var(--color-e62828);
+}
+[data-backcolor="#ff761a"] {
+  background-color: var(--color-ff761a-ffa31f);
+}
+[data-backcolor="#ffad44"] {
+  background-color: var(--color-ffad44-ffcb44);
+}
+[data-backcolor="#42e2a5"] {
+  background-color: var(--color-42e2a5-89eabf);
+}
+[data-backcolor="#4bb8ff"] {
+  background-color: var(--color-4bb8ff-85ccff);
+}
+[data-backcolor="#5b6fff"] {
+  background-color: var(--color-5b6fff-7c99ff);
+}
+[data-backcolor="#5e32ff"] {
+  background-color: var(--color-5e32ff-8375ff);
+}
+
+em {
+    font-style: italic;
+}
+
+.article-wrapper em {
+    font-style: italic!important;
+}

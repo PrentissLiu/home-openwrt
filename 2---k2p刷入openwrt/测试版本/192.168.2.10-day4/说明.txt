@@ -1,0 +1,19 @@
+
+定制软件包
+kmod-batman-adv batctl-default luci-app-easymesh luci-app-turboacc luci-app-watchcat luci-app-sqm wpad-mesh-openssl -wpad-basic-mbedtls luci-app-statistics luci-app-nlbwmon
+
+和day3的一样，配置没有变化
+
+斐讯布局
+sha256sum: 1db1eaf0d2e7509391170029cbb3047bc448a79f78334ff93dc39593d01c167a
+
+后台：192.168.2.10
+密码：admin
+
+
+
+平台:	ramips/mt7621
+版本:	分支: 23.05-SNAPSHOT
+内核: 5.15.158
+
+

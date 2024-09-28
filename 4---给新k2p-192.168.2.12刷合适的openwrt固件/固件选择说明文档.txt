@@ -1,0 +1,11 @@
+
+
+
+涉及到mesh的app：
+wpad-mesh-openssl -wpad-basic-mbedtls  -wpad-mini  luci-app-easymesh batctl-default kmod-batman-adv 
+
+
+涉及到可能用到的插件： luci-app-turboacc luci-app-watchcat luci-app-sqm   luci-app-statistics luci-app-nlbwmon
+IPV6 旁路由模式
+
+以上内容符合：package-192.168.2.10-day3的编译过程

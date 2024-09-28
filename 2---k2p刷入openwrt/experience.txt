@@ -1,0 +1,37 @@
+192.168.2.10:
+5G —— 120信道
+2.4G —— 9 信道
+加密算法：WPA-PSK算法
+算法：强制CCMP（AES）
+
+
+192.168.2.11:
+5G —— 120信道
+2.4G —— 8信道
+加密算法：WPA-PSK算法
+算法：强制CCMP（AES）
+
+Easymesh:
+1. ID：mymesh
+2. 移动域2f2a
+3. 快速漫游值：-40
+4. 踢出值：-55
+5. 不加密
+---------------
+
+#批注：因为用的是5G的信号组Mesh，因此5G的信道需要一致，也就是都是120信道
+1. 使用5G的Wi-Fi作为无线回程，那么5G的参数（包括信道需要设置成一样的，不然无法mesh成功）
+2. 2.4G不参与无线回程，2.4G是radio0，那么easymesh里面只选择radio1即可
+3. 需要参加无线回程的mesh ap类型，需要两项设置完全一样
+
+
+
+easymesh需要的依赖：
+-wpad -wpad-mini 这样试试呢？
+wpad-mbedtls -wpad-mini -wpad 不行啊
+wpad-mesh-openssl batctl-default batman-adv -batctl-tiny -wpad -wpad-mini 成功了！我的老天
+
+
+
+
+/var/lock/opkg.lock.
